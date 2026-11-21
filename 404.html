@@ -51,6 +51,22 @@ html,body{margin:0;background:#faf8f2}
 .asvr .idx li{grid-template-columns:1fr auto;align-items:center}
 .asvr .idx a.c{text-decoration:none}
 .asvr .idx .w{text-transform:none;letter-spacing:0;font-weight:600;font-size:13.5px;color:#8a8477}
+.pq{display:none;align-items:center;gap:14px;margin:0 0 14px;padding:10px 0;border-top:1px solid #e1dac8;border-bottom:1px solid #e1dac8}
+.pq svg{width:.9in;height:.9in;flex:0 0 .9in}
+.pq p{font-size:12.5px;line-height:1.45;margin:0;color:#20222a}
+.pq b{color:#161d2e}
+@page{size:letter;margin:.45in}
+@media print{
+html,body{background:#fff}
+.top{display:none}
+.asvr{max-width:none;padding:0;background:#fff}
+.asvr .map{height:3.9in;break-inside:avoid;border-color:#ccc}
+.leaflet-control-zoom{display:none}
+.asvr .legs a{background:#fff;color:#161d2e;border:1px solid #161d2e;padding:4px 8px}
+.asvr .legs a span{color:#8a8477}
+.asvr li,.asvr .roads,.asvr .foot{break-inside:avoid}
+.pq{display:flex}
+}
 </style>
 </head>
 <body>
